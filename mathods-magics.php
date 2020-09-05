@@ -13,9 +13,14 @@ class Endereco {
 		$this->cidade = $c;
 
 	}
+
+	public function __toString() {
+		return $this->logradouro . "," . $this->numero. "-" .$this->cidade;
+
+	}
 }
 
 $newEndereco = new Endereco("Rua 9 casa", "45", "Manaus AM");
-var_dump($newEndereco);
+echo $newEndereco;
 
 ?>
