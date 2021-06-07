@@ -1,53 +1,45 @@
 <?php
-/*
-function calc($n1, $n2, $n3, $n4) {
 
+class NBA {
 
-	$media = ($n1 + $n2 + $n3 + $n4) / 4;
+	protected $team;
+	public $public;
 
-	if ($media >=1 && $media <=5) {
-		
-		echo "Você tirou: $media, está reprovado!!";
+	public function __construct(){
+
+		$this->team = array(
+			'Time1'=>'Lakers',
+			'Time2'=>'Chicago Bulls',
+			'Time3'=>'Golde State'
+		);
+
+		$this->public = array(
+			'pagantes'=>40000,
+			'cortesia'=>2000,
+		);
 	}
-	elseif ($media >=6 && $media <=7) {
-		
-		echo "Você tirou: $media, Você passou!!";
-	} elseif ($media >=8 && $media <=10) {
+	public function imprimir1() {
 
-		echo "Você tirou: $media, PARABÉNS!! Maior nota";
-	}
-}
-calc(9,4,4,3); */
-
-
-/*function tre(){
-
-	$a = array('one', 'two');
-	$b = array('three', 'four', 'five');
-
-	print_r(array_unique(array_merge($a, $b)));
+		foreach($this->team as $key => $values) {
 	
-}
-tre(); */
-/*
-function ping(){
-
-	$host = "www.google.com";
-
-	echo "ping -n 3 {$host}";
-}
-ping();*/
-
-function inc(){
-
-	echo "*===ALFABETO===*" . PHP_EOL . "<br>";
-
-	$s = 'a';
-
-	for ($n=0; $n<24; $n++) { 
-		echo ++$s . PHP_EOL ."<br>";
+			echo $key . ' - ' . $values . '<br>';
+		}
+		echo '=========================== <br>';
 	}
-	
+
+	public function imprimir2()
+	{
+		foreach($this->public as $key => $values) {
+
+			echo $key . ' - ' . $values . '<br>';
+		}
+	}
+
 }
-inc();
+
+$print = new NBA();
+echo $print->imprimir1();
+echo $print->imprimir2();
+
+
 ?>

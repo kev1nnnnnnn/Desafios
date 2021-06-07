@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet"  href="assets/style.css">
+   <link rel="stylesheet" href="assets/node_modules/bootstrap/dist/css/bootstrap.min.css">
+   <title>Training</title>
+</head>
+<body class="bg-info">
+   
+  <div class="container text-center ">
+      <h3>Bem vindo, Use sua imaginação :D</h3>
+  
+
+    <div class="row  py-4 mx- 4 mt-4">
+      <div class="bg-dark border col-md-4 ">
+        <form class="pb-3" action="processo.php" method="POST">
+          <h1>MEDIA</h1>
+          <label >Informe o primeiro número: </label>
+          <input class="form-control" type="number" name="n1">  
+    
+            <label>Informe o 2º número: </label>
+            <input class="form-control" type="number" name="n2"> 
+    
+            <button type="submit" class="btn btn-info mt-4 form-control">Media</button> 
+              
+        </form> 
+      </div>
+
+      <div class=" bg-dark border col-md-4">
+        <form action="Conversor.php" method="POST">
+          <h3>CONVERSOR</h3>
+          <label >Converter metros para centimetros: </label>
+          <input class="form-control" type="number" name="metros">  
+          <button type="submit" class="btn btn-info mt-4 form-control">Entrar</button>   
+          
+          <label class="mt-2">Converter centimetros para metros: </label>
+          <input class="form-control" type="number" name="cm">  
+          <button type="submit" class="btn btn-info mb-3 mt-3 form-control">Entrar</button>   
+        </form> 
+      </div>
+
+
+      <div class=" bg-dark border col-md-4">
+        <form class="pt-3 pb-3" action="Banco.php" method="POST">
+          <h3>DADOS BANCARIOS</h3>
+          <label >Informe o seu saldo do banco: </label>
+          <input class="form-control" type="number" name="saldo">  
+    
+          <label>Saque a quantidade: </label>
+          <input class="form-control" type="number" name="saque">
+    
+          <button type="submit" class="btn btn-info mt-4 form-control">verificar</button>         
+        </form> 
+      </div>
+    </div>  
+
+
+    <div class="row bg-dark">
+      <div class="col-md-5 justify-content-md-center">
+        <form class="pt-3 pb-3" action="Imc.php" method="POST">
+          <h3>IMC</h3>
+          <label >Informe sua peso: </label>
+          <input class="form-control" type="number" name="peso">  
+    
+          <label>Informe seu altura: </label>
+          <input class="form-control" type="number" name="altura">
+    
+          <button type="submit" class="btn btn-info mt-4 form-control">verificar</button>         
+        </form> 
+      </div>
+    </div>
+  </div>
+  
+ 
+
+ <div class="container bg-dark mb-3">
+   <div class="row">
+    <form class="pd-2" action="treino.php" method="POST">
+      
+      <div class="col-12 col-md-12">
+
+       <div class="form-check">
+        <h4>Qual o melhor estilo musical?</h4>
+        <input class="form-check-input" type="checkbox" value="a" name="questao1">
+        <label class="form-check-label" for="check">Rock</label>
+     </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="b" name="questao1">
+        <label class="form-check-label" for="check">Reggae</label>
+     </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="c" name="questao1">
+        <label class="form-check-label" for="check">Funk</label>
+     </div>
+    <!---========================PROXIMA========================----------->
+    <div class="col-12 col-md-12 mt-4">
+       <div class="form-check">
+        <h4>Qual o melhor esporte do mundo?</h4>
+        <input class="form-check-input" type="checkbox" value="a" name="questao2">
+        <label class="form-check-label" for="check">Futebol</label>
+     </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="b" name="questao2">
+        <label class="form-check-label" for="check">Basquete</label>
+     </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="c" name="questao2">
+        <label class="form-check-label" for="check">Vôlei</label>
+     </div>
+     
+     <input name="enviar" class="btn btn-light mt-3" type="submit" value="Enviar">
+    </form>    
+   </div>
+ </div>
+
+
+</body>
+</html>
+
+

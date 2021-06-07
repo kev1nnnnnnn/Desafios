@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet"  href="assets/style.css">
+   <link rel="stylesheet" href="assets/node_modules/bootstrap/dist/css/bootstrap.min.css">
+   <title>Document</title>
+</head>
+<body class="bg-success">
+   
+   <div class="container text-center">
+      <h1>Bem vindo a sua Calculadora</h1>
+   </div>
+   
+   <div class="container bg-dark col-md-4">
+
+      <form method="post" action="processo.php">
+            <!-- Input que receberá o primeiro valor a ser calculado -->
+            <input type="text" name="v1" placeholder="Valor 1" />
+
+            <!-- Select com o tipo de operação (Somar, Diminuir, Multiplicar ou Dividir -->
+            <select name="operacao">
+                <option value="soma">+</option>
+                <option value="subtrai">-</option>
+                <option value="multiplica">*</option>
+                <option value="divide">/</option>
+            </select>
+
+            <!-- Input que receberá o segundo valor a ser calculado -->
+            <input type="text" name="v2" placeholder="Valor 2" />
+
+            <!-- Input que enviará os valores para a função de cálculo -->
+            <input type="submit" name="doCalc" value="Calcular" />
+        </form>
+   
+   </div>
+
+</body>
+</html>
+
+
