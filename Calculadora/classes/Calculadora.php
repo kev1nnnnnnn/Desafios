@@ -28,7 +28,9 @@ class Calculadora {
     }
 
     public function getTotal()
-    {
+    {   
+        $this->total = number_format($this->total, 2, ',', '.');
+
         return $this->total;
     }
 
